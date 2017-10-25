@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        app:title="게시글"
+        app:titleTextColor="#ffffffff"
+        android:id="@+id/mainToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_marginBottom="8dp">
+    </android.support.v7.widget.Toolbar>
+
+    <ListView
+        android:layout_weight="45"
+        android:id="@+id/questionDescriptionReplyListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+
+
+    <LinearLayout
+        android:layout_weight="5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/questionDescriptionReplyEditTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="댓글을 입력해 주세요."/>
+
+        <Button
+            android:id="@+id/questionDescriptionAddReplyBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="댓글 추가" />
+    </LinearLayout>
+</LinearLayout>

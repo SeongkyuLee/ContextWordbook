@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_weight="4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:layout_gravity="center"
+            android:id="@+id/questionItemProgressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/questionItemPhotoView"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <TextView
+            android:textSize="24sp"
+            android:id="@+id/questionItemWordView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Word"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/questionItemContentView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="4dp"
+            android:text="질문 내용"
+            android:textColor="@android:color/black"
+            android:textSize="36sp" />
+
+
+        <TextView
+            android:textSize="24sp"
+            android:id="@+id/questionItemWriterView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="글쓴이"
+            android:textColor="@android:color/darker_gray" />
+
+        <TextView
+            android:textSize="24sp"
+            android:id="@+id/questionItemDateView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="2017-08-26"
+            android:textColor="@android:color/darker_gray" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textSize="24sp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="조회수" />
+
+            <TextView
+                android:textSize="24sp"
+                android:id="@+id/questionItemViewNumView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:textSize="24sp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="댓글" />
+
+            <TextView
+                android:textSize="24sp"
+                android:id="@+id/questionItemReplyNumView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="@color/colorPrimary"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

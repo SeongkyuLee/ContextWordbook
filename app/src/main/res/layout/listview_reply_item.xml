@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/replyItemWriterView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="8dp"
+            android:text="Nickname" />
+
+        <TextView
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:id="@+id/replyItemDateView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/replyItemModifyView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:linksClickable="false"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="Modify"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/replyItemDeleteView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:linksClickable="false"
+            android:longClickable="false"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="Delete"
+            android:textColor="@color/colorPrimary" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:textSize="20sp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:id="@+id/replyItemContentView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reply Content" />
+</LinearLayout>

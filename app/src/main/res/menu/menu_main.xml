@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/mainMenuHideWord"
+        android:icon="@drawable/ic_visibility_off_white_24dp"
+        android:title="단어 숨기기"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/mainMenuHideMeaning"
+        android:icon="@drawable/ic_speaker_notes_off_white_24dp"
+        android:title="의미 숨기기"
+        app:showAsAction="always"/>
+
+
+    <!-- Settings, should always be in the overflow -->
+    <item android:id="@+id/mainMenuReset"
+        android:title="단어장 지우기"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/mainMenuCardGame"
+        android:title="카드 학습"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/mainMenuAskQuestion"
+        android:title="단어 질문 게시판"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/mainMenuLogin"
+        android:title="로그인"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/mainMenuSendBug"
+        android:title="건의/신고"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/mainMenuStopWatch"
+        android:title="스탑워치"
+        app:showAsAction="never"/>
+</menu>

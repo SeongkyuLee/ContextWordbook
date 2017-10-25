@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        app:title="공부 시간 기록"
+        app:titleTextColor="#ffffffff"
+        app:subtitleTextColor="#ffffffff"
+        android:id="@+id/mainToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+    </android.support.v7.widget.Toolbar>
+
+
+    <TextView
+        android:id="@+id/stopWatchTimeTextView"
+        android:layout_weight="5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="00:00:00"
+        android:textSize="60sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/stopWatchLapTimeTextView"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="00:00:00"
+        android:textSize="30sp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:visibility="invisible"
+        android:id="@+id/stopWatchHeader"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="번호"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:text="전체 시간"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:text="중간 기록"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        >
+
+        <ListView
+            android:id="@+id/stopWatchLapListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5">
+
+        <Button
+            android:id="@+id/stopWatchStartBtn"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="시작"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:onClick=""/>
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/stopWatchRecordBtn"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="기록"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:onClick=""/>
+    </LinearLayout>
+
+</LinearLayout>

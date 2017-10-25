@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">WordPhoto</string>
+    <string name="main_text">Hello World!</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="button_send">Send</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">이메일 주소를 입력 해주세요.</string>
+    <string name="prompt_password">비밀번호를 입력 해주세요.</string>
+    <string name="action_sign_in">로그인 또는 회원가입</string>
+    <string name="action_sign_in_short">로그인</string>
+    <string name="action_register">회원가입</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+</resources>

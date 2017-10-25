@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginTop="8dp">
+
+    <TextView
+        android:textSize="20dp"
+        android:id="@+id/newsItemTitleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"/>
+
+    <TextView
+        android:textSize="16dp"
+        android:id="@+id/newsItemDescriptionView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"/>
+
+    <TextView
+        android:textColor="@color/colorPrimary"
+        android:textSize="12dp"
+        android:id="@+id/newsItemLinkView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="원문 기사 보기"
+         />
+
+</LinearLayout>

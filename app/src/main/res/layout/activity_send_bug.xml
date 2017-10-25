@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        app:title="건의/신고"
+        app:titleTextColor="#ffffffff"
+        android:id="@+id/mainToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/wordsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/sendBugSubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="메일 제목을 입력해주세요."
+            android:inputType="text"
+            android:textSize="30sp"/>
+
+        <EditText
+            android:gravity="top|left"
+            android:id="@+id/sendBugContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="메일 내용을 입력해주세요."
+            android:inputType="text"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sendBugSendBtn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="건의/신고하기"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:onClick="sendMail"
+        />
+
+</LinearLayout>

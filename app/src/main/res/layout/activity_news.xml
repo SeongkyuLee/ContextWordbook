@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.q.wordphoto.NewsActivity">
+
+    <TextView
+        android:layout_weight="2"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:textSize="28dp"
+        android:id="@+id/naverNewsWordView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="Word" />
+
+    <TextView
+        android:layout_weight="2"
+        android:textSize="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:id="@+id/naverNewsMeaningView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="Meaning" />
+
+    <ListView
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:id="@+id/naverNewsListView"
+        android:layout_weight="25"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <LinearLayout
+        android:layout_weight="2.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:textColor="#ffffff"
+            android:background="@color/colorPrimary"
+            android:layout_weight="1"
+            android:id="@+id/naverNewsPrevBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="이전 단어"
+            android:textSize="20sp"/>
+
+        <Button
+            android:textColor="#ffffff"
+            android:background="@color/colorPrimary"
+            android:layout_weight="1"
+            android:id="@+id/naverNewsNextBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="다음 단어"
+            android:textSize="20sp"/>
+    </LinearLayout>
+</LinearLayout>

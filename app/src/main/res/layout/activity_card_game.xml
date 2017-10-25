@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:mContext="com.example.q.wordphoto.CardDescriptionActivity">
+
+    <ProgressBar
+        android:id="@+id/cardGameProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="330dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="19dp"
+        android:progress="1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/cardGameBackCard"
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:orientation="vertical"
+        android:layout_alignTop="@+id/cardGameFrontCard"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/cardGameBackCardImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@color/colorDarkGray" />
+
+        <TextView
+            android:textSize="20dp"
+            android:id="@+id/cardGameMeaningTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="의미"
+            android:textColor="@color/colorWhite"
+            style="@style/Base.TextAppearance.AppCompat.Display1"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/cardGameBackCardTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Back Side"
+            android:textColor="@color/colorWhite"
+            style="@style/Base.TextAppearance.AppCompat.Display1"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/cardGameFrontCard"
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:orientation="vertical"
+        android:layout_marginTop="43dp"
+        android:layout_below="@+id/cardGameProgressBar"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/cardGameFrontCardImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@color/colorGray"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:textSize="20dp"
+            android:id="@+id/cardGameWordTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="단어"
+            android:textColor="@color/colorWhite"
+            style="@style/Base.TextAppearance.AppCompat.Display1"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp" />
+
+        <TextView
+            android:id="@+id/cardGameFrontCardTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Front Side"
+            android:textColor="@color/colorWhite"
+            style="@style/Base.TextAppearance.AppCompat.Display1"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <Button
+        android:background="@color/colorGray"
+        android:textSize="28sp"
+        android:textColor="@color/colorWhite"
+        android:text="이전 카드"
+        android:id="@+id/cardGamePrevBtn"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="59dp"
+        android:layout_below="@+id/cardGameBackCard"
+        android:layout_alignLeft="@+id/cardGameBackCard"
+        android:layout_alignStart="@+id/cardGameBackCard" />
+
+    <Button
+        android:background="@color/colorGray"
+        android:textSize="28sp"
+        android:textColor="@color/colorWhite"
+        android:text="다음 카드"
+        android:id="@+id/cardGameNextBtn"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cardGamePrevBtn"
+        android:layout_alignBottom="@+id/cardGamePrevBtn"
+        android:layout_alignRight="@+id/cardGameBackCard"
+        android:layout_alignEnd="@+id/cardGameBackCard" />
+
+
+</RelativeLayout>

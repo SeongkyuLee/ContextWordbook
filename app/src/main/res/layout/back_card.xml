@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardGameBackCard"
+    android:layout_width="250dp"
+    android:layout_height="300dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/cardGameBackCardImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@color/colorPrimary"/>
+
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/cardGameBackCardTextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Back Side"
+        android:textColor="@color/colorWhite"
+        style="@style/Base.TextAppearance.AppCompat.Display1"
+        android:gravity="center"/>
+
+</RelativeLayout>

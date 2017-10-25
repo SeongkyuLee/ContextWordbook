@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/stopWatchItemIndexView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="index"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/stopWatchItemElapsedTimeView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:text="elapsed time"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/stopWatchItemElapsedLapTimeView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:text="elapsed lap time"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"/>
+</LinearLayout>
